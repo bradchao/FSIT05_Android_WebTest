@@ -3,11 +3,33 @@
         var here = document.getElementById('here');
         here.innerHTML = parseInt(Math.random()*49+1);
     }
+    function test2(){
+        alert('Hello, World');
+    }
+    function test3(){
+        var str = prompt('Input u r name?');
+    }
+    function test4(newname){
+        var name = document.getElementById('name');
+        name.innerHTML = newname;
+    }
+    function test4(){
+        var username = document.getElementById('username');
+        brad.callFromJS(username.value);
+    }
+
+
 </script>
 <h1>Brad Big Company</h1>
 <hr />
-Hello, World
+Hello, <span id='name'>World</span><br>
+<a href='brad02.html'>Page2</a>
+<hr />
+<input type='text' id='username' />
 <hr />
 <input type="button" onclick="test1()" value="Click Me"/>
+<input type="button" onclick="test2()" value="alert"/>
+<input type="button" onclick="test3()" value="prompt"/>
+<input type="button" onclick="test4()" value="callAndrid"/>
 <hr />
 <div id='here'></div>
